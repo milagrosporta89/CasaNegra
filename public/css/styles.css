@@ -1,0 +1,66 @@
+
+*{
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none
+}
+h1{
+    padding:0;
+    margin: 0;
+
+}
+h2{
+    margin-bottom: 1em;
+}
+section{
+    padding: 2em;
+    padding-top: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+.logo__img{
+    width: auto;
+    height: 10vh;
+    margin: auto;
+    display: block;
+}
+.header__container{
+    text-align: center;
+    padding: 1em;
+    /* margin-top: 1em; */
+    /* margin-bottom: 1em; */
+    flex-basis: 10%;
+}
+.nosotros__img, .ubicacion__img, .laCasa__img{
+    border-radius: 12px;
+    margin-top: 1em;
+
+}
+
+.nosotros__container--desktop, .ubicacion__container--desktop{
+    display:none
+}
+
+.nosotros__text-container, .aDonde__text-container, .laCasa__text-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+#underline__link-laCasa, #underline__link-ubicacion{
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 1em;
+    align-self: flex-start;
+}
+
+
+
+@media screen and (min-width: 450px){  
+    .nosotros__container--desktop{
+        background-color:yellow;
+        display: inline-block;
+    }
+}
