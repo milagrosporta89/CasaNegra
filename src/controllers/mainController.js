@@ -9,6 +9,11 @@ const mainController = {
     index: (req, res) => {
         res.render("index");
 },
+    casaNegra:(req,res) =>{
+
+        res.render ("casaNegra")
+
+    }
 
 }
 

@@ -12,7 +12,7 @@
         margin-bottom: 1em;
     }
     section{
-        padding: 2em;
+        padding: 8em;
         padding-top: 0;
     }
     a{
@@ -21,7 +21,7 @@
     body{
        
     }
-    /* MAIN GRID */
+    /* HEADER*/
     .header__banner-img{
         background-image: url(../img/imgPda/potreroDeGaray-lagoVeleros.jpg);
         height: 68vh;
@@ -41,6 +41,7 @@
         /* margin-bottom: 1em; */
         flex-basis: 10%;
     }
+    /* MAIN GRID */
     .nosotros__img, .ubicacion__img, .laCasa__img{
         border-radius: 2em;
         /* margin-top: 1em; */
@@ -60,27 +61,31 @@
         display:none
     }
 
-     .aDonde__text-container,  {
-      
+     .aDonde__text-container  {
 
         align-items: center;
         padding-top: 2em;
     } 
+
     #underline__link-laCasa, #underline__link-ubicacion{
         text-decoration: underline;
         font-weight: bold;
         padding-top: 1em;
         align-self: flex-start;
     }
+    /*FOOTER */
 
+    .footer__banner{
+        background-image: url(../img/imgPda/potreroDeGaray-paisaje.jpg);
+        height: 68vh;
+        background-size: cover;
+        background-position: bottom;
 
+    }
 
     @media screen and (min-width: 450px){  
         #nosotros__container--desktop{
-            /* background-color:yellow; */
-            /* border: 2px solid red; */
             display: grid;
-            /* grid-area: 3; */
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             grid-column: 2/3;
@@ -90,12 +95,8 @@
             border-radius: 2em;
             padding: 0.5em;
         }
-        .section__grid{
-            /* display:grid; */
-            /* grid-template-columns: 50% 1fr 1fr; */
-            /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
-        }
-        .nosotros__container, .aDonde__container{
+  
+        .nosotros__container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 13em 1fr;
@@ -111,7 +112,7 @@
         grid-column: 3/5;
         /* grid-row: 1/5; */
         }
-        .nosotros__text-container, .aDonde__text-container, laCasa__text-container{
+        .nosotros__text-container, .aDonde__text-container, .laCasa__text-container{
         display: flex;
         flex-direction: column;
         height: max-content;
@@ -119,16 +120,35 @@
         margin-top: 2em;
         padding: 0.5em;
         }
+        .aDonde__text-container{
+            align-items: flex-start;
+        }
         .aDonde__grid-container{
             grid-column:1/3
+        }
+        .aDonde__container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 21em 1fr;
+            padding-left: 10em;
+            padding-right: 10em;
+
         }
         .aDonde__text-location{
             /* display: grid; */
             grid-column: 1/3;
            
         }
+        .aDonde__container-img{
+            
+        }
+        #aDonde__title-position{
+            align-self: center;
+ 
+        }
         .laCasa__text-location{
-          grid-column: 1/3;
+          grid-column: 3/5;
+          grid-row: 1/2;
         }
     /*    .section__grid:nth-child(1){
             grid-column: 3 ;
