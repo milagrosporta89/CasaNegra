@@ -13,6 +13,9 @@ const mainController = {
 
         res.render ("casaNegra")
 
+    },
+    reservationForm: (req, res) => {
+        res.render ("reservationForm")
     }
 
 }

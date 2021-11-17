@@ -12,7 +12,7 @@
         margin-bottom: 1em;
     }
     section{
-        padding: 8em;
+        padding: 0;
         padding-top: 0;
     }
     a{
@@ -84,6 +84,7 @@
     }
 
     @media screen and (min-width: 450px){  
+        /* INDEX */
         #nosotros__container--desktop{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -150,7 +151,79 @@
           grid-column: 3/5;
           grid-row: 1/2;
         }
-    /*    .section__grid:nth-child(1){
-            grid-column: 3 ;
-        } */
+        /* CASA NEGRA */
+        .casaNegra__main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* width: min-content; */
+        }
+        .casaNegra__grid-container{
+            display: grid;
+            grid-template-columns: 1.5fr    1fr;
+            grid-template-rows: 10em 15em  1fr 1fr;
+            /* padding-left: 15%; */
+            /* padding-right: 15%; */
+            width: 68em;
+            position: relative;
+            /* left: 18em; */
+        }
+        .casaNegra__title{
+            grid-column: 2/3;   
+            grid-row: 1/2
+            ;
+        }
+        .casaNegra__dormitorios{
+            grid-column: 2/3;
+            grid-row:2/3;
+            height: 3em;
+            width:auto
+
+        }
+        .casaNegra__dormitorios img{
+            height: 8em;
+            width:auto;
+        }
+        .casaNegra__carrusel{
+            grid-column: 1/2;
+            grid-row: 4/5
+        }
+        .casaNegra__carrusel img{
+         height: 10em;
+         margin-top: 1em
+
+         
+        }
+        .casaNegra__queOfrecemos{
+            grid-column: 2/3;
+            padding: 1em;
+            grid-row: 3/5;
+        }
+        .casaNegra__queOfrecemos li{
+            list-style-type: disc;
+            list-style-position: inside;
+           
+            
+        }
+        
+        .casaNegra__carrusel-imgStatic{
+            grid-row:2/4
+
+        }
+        .casaNegra__ubicacion-container{
+            grid-template-columns: 0.5fr 1fr;
+            display:grid;
+            
+        |
+;
+            grid-template-rows: 1fr;
+            width: 68em;
+        }
+        .casaNegra_map-position{
+            grid-column:2/3
+        }
     }
+        
+        
+        
