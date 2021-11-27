@@ -63,6 +63,7 @@
         font-weight: bold;
         padding-top: 1em;
         align-self: flex-start;
+        cursor:pointer
     }
     /*FOOTER */
 
@@ -186,8 +187,8 @@
           grid-column: 3/5;
           grid-row: 1/2;
         }
-        .modal-servicio{
-            /* background-color: rgba(0,0,0,0.1); *//* ver si desde el overlay se puede pooner el gris de fondo */
+        .modal-servicio.active{
+            background-color: rgba(0,0,0,0.5);/* ver si desde el overlay se puede pooner el gris de fondo */
             position: fixed;
             top: 0px;
             left:0;
@@ -197,12 +198,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index: 10;
-         /*    display: none; */
-
+            z-index: 0;
         }
         .modal-servicio{
-            display:none
+        display:none
 
 
         }
@@ -211,10 +210,10 @@
             top: 10%;
             background-color: white;
             overflow-y: auto; /* permite hacer scroll */
-            width:max-content;
+            width: 55%;
             padding: 3em;
             border-radius: 2em;
-            margin: 19vh 0vh;
+            margin: 5vh 0vh;
             line-height: 2em;
         }
         .modal-servicio__inner h4{
@@ -253,10 +252,11 @@
             opacity:0;
         
         }
-        #overlay{
-      /*       pointer-events: none; */
-            opacity: 1
-        }
+        #overlay.active{
+      /* pointer-events: none; */
+      opacity: 1;
+      background-color:red;
+      }
  
         /* CASA NEGRA */
         .casaNegra__main{

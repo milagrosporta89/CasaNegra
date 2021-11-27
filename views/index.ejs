@@ -17,7 +17,8 @@
     <section>
         <!-- LOGO Y ENCABEZADO -->
         <div class="header__container">
-            <h1>Tu lugar para vivir las Sierras</h1>
+            <h1>Tu lugar para vivir las Sierras
+            </h1>
             <p>Potrero de Garay - Córdoba</p>
 
         </div>
@@ -111,7 +112,7 @@
                                 <!--           <img src="/img/imgCasaNegra/galeria_1.JPG">  -->
                                 
                                 <a type="button" class="btn btn-dark btn-block" href="/reservationForm">Reservar</a>
-                                <button data-modal-target="#modal-servicio"> ssoy el boton</button>
+                             
                                 <a id="underline__link-laCasa" class="openModal" data-modal-target="#modal-servicio">Ver todos los servicios</a>
     
                         </div>
@@ -121,7 +122,8 @@
         </div>
 
     </section>
-
+<%- include ("partial/indexModal.ejs")%>
+<div id="overlay" ></div>
     <footer >
         <div>
             <img src="/img/logo 2.png" class="logo__img">
@@ -140,5 +142,6 @@
 
 
 </body>
-
+<script src="js/indexModal.js"></script>
 </html>
+
