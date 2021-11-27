@@ -2,16 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Negra</title>
+    <%- include ("partial/head.ejs") %>
 </head>
 <header>
     <div class="header__banner-img">
@@ -39,7 +30,7 @@
             </div>
 
             <!-- GRID -->
-            <div class="section__grid">
+            <div class="index__main">
 
                 <!-- NOSOTROS  -->
                 <div class="nosotros__container">
@@ -92,7 +83,7 @@
                         </div>
                     </div>
                     <div class="aDonde__container-img">
-                        <img src="/img/imgPda/velero.jpg" >
+                        <img src="/img/imgPda/velero.jpg" class="aDonde__img" >
                         <div id="nosotros__container--desktop">
 
                             <img src="/img/imgPda/cancha-tenis.jpg">
@@ -113,11 +104,15 @@
                                 asador con horno chileno y bífera, pileta con solárium y un amplio jardín con especies
                                 autóctonas
                                 que se funden con las sierras de fondo.</p>
-                            <a id="underline__link-laCasa">Ver todos los servicios</a>
-                            <!-- poner ruta para ir a servicios -->
-                  <!--           <img src="/img/imgCasaNegra/galeria_1.JPG"><!--  --> -->
-    
-                            <a type="button" class="btn btn-dark btn-block" href="/reservationForm">Reservar</a>
+                                <br>
+                                
+                                
+                                <!-- poner ruta para ir a servicios -->
+                                <!--           <img src="/img/imgCasaNegra/galeria_1.JPG">  -->
+                                
+                                <a type="button" class="btn btn-dark btn-block" href="/reservationForm">Reservar</a>
+                                <button data-modal-target="#modal-servicio"> ssoy el boton</button>
+                                <a id="underline__link-laCasa" class="openModal" data-modal-target="#modal-servicio">Ver todos los servicios</a>
     
                         </div>
                     </div>
@@ -126,6 +121,7 @@
         </div>
 
     </section>
+
     <footer >
         <div>
             <img src="/img/logo 2.png" class="logo__img">

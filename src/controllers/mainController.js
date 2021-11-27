@@ -16,6 +16,9 @@ const mainController = {
     },
     reservationForm: (req, res) => {
         res.render ("reservationForm")
+    },
+    servicios:(req,res) => {
+        res.render ("servicios")
     }
 
 }

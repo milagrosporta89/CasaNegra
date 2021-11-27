@@ -7,5 +7,5 @@ const mainController = require("../controllers/mainController");
 router.get("/", mainController.index);
 router.get("/casaNegra", mainController.casaNegra)
 router.get("/reservationForm", mainController.reservationForm)
-
+router.get("/servicios", mainController.servicios)
 module.exports = router; 
