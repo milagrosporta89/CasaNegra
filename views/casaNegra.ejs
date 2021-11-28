@@ -37,13 +37,20 @@
                 <div>
 
                 </div class="casaNegra__carrusel-imgStatic">
-                <img src="/img/imgCasaNegra/galeria_1.jpg" class="casaNegra__carrusel-imgStatic" >
+                <img src="/img/imgCasaNegra/galeria_1.jpg" class="casaNegra__carrusel-imgStatic" id="casaNegra__carrusel-featured" >
 
-                <div class="casaNegra__carrusel">
+                <div class="casaNegra__carrusel-wrapper">
                     <!-- CARRUSEL IMAGENES CASA -->
-                    <img src="/img/imgCasaNegra/galeria_1.jpg">
-                    <img src="/img/imgCasaNegra/galeria_1.jpg">
-                    <img src="/img/imgCasaNegra/galeria_1.jpg">
+                    <span id="slideLeft" class="casaNegra__carrusel-arrow"><i class="fas fa-chevron-left casaNegra__carrusel-arrow"></i></span>
+                    <div class=casaNegra__carrusel-slider id="slider">
+                        <img src="/img/imgCasaNegra/galeria_1.jpg" class= "casaNegra__carrusel-thumbnail">
+                        <img src="/img/imgCasaNegra/frente_casa.jpg" class= "casaNegra__carrusel-thumbnail">
+                        <img src="/img/imgCasaNegra/pileta.jpg" class= "casaNegra__carrusel-thumbnail">
+                        <img src="/img/imgCasaNegra/asador.jpg" class= "casaNegra__carrusel-thumbnail">
+                        <img src="/img/imgCasaNegra/asador.jpg" class= "casaNegra__carrusel-thumbnail">
+                        <img src="/img/imgCasaNegra/asador.jpg" class= "casaNegra__carrusel-thumbnail" >
+                    </div>
+                    <span id="slideRight" class="casaNegra__carrusel-arrow"><i class="fas fa-chevron-right"></i></span>
                 </div>
                 <div class="casaNegra__queOfrecemos">
                     <!-- QUE OFRECEMOS? -->
@@ -107,4 +114,5 @@
 
 </body>
 <script src="js/indexModal.js"></script>
+<script src="js/casaNegra.js"></script>
 </html>

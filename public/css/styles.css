@@ -267,7 +267,7 @@
         }
         .casaNegra__grid-container{
             display: grid;
-            grid-template-columns: 1.5fr    1fr;
+            grid-template-columns: 1.6fr    1fr;
             grid-template-rows: auto auto  auto auto;
             width: 68em;
             position: relative;
@@ -288,15 +288,43 @@
             height: 8em;
             width:auto;
         }
-        .casaNegra__carrusel{
+        .casaNegra__carrusel-wrapper{
             grid-column: 1/2;
-            grid-row: 4/5
+            grid-row: 4/5;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0,0,0,0.05);
         }
-        .casaNegra__carrusel img{
+        .casaNegra__carrusel-thumbnail{
          height: 10em;
-         margin-top: 1em
+         margin-top: 0em;
+         padding: 0em 0.1em;
+         cursor:pointer;
+         opacity: 0.7;
+        }
+        .casaNegra__carrusel-thumbnail:hover{
+          opacity:1;
+        }
+        .casaNegra__carrusel-thumbnail.active{
+            opacity:1;
+           
+        }
+        
 
+        .casaNegra__carrusel-slider{
+            display:flex;
+            overflow-x: hidden;
          
+        }
+        .casaNegra__carrusel-arrow{
+            cursor:pointer
+            /* background-color: grey; */
+            /* min-height: 2em; */
+            /* align-self: center; */
+            /* display: block; */
+            /* text-align: center; */
         }
         .casaNegra__queOfrecemos{
             grid-column: 2/3;
@@ -306,13 +334,16 @@
         .casaNegra__queOfrecemos li{
             list-style-type: disc;
             list-style-position: inside;
-           
-            
+                       
         }
         
         .casaNegra__carrusel-imgStatic{
-            grid-row:2/4
-
+            grid-row:2/4;
+            cursor:pointer;
+            object-fit: cover;
+        }
+        #casaNegra__carrusel-featured{
+            object-fit:cover;
         }
         .casaNegra__ubicacion-container{
             grid-template-columns: 0.5fr 1fr;
@@ -328,4 +359,4 @@
     }
         
         
-        
+         
